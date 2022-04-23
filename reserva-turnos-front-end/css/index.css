@@ -1,0 +1,106 @@
+
+/*----------GENERAL--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color-principal: rgb(3, 170, 230);
+    --color-secundario: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    background-color: var(--color-secundario);
+}
+ 
+header{
+    background-color: var(--color-principal);
+    padding: 30px;
+    width: 100vw;
+    
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+
+div{
+    text-align: center;
+}
+
+
+footer{
+    background-color: var(--color-principal);
+    padding: 30px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+ul {
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+
+.nav li {
+    background-color:var(--color-principal);
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:var(--color-principal);
+    color: var(--color-secundario);
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+
+
+
+

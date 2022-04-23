@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/getPaciente.js"></script>
+    <script src="../js/putYDeletePaciente.js"></script>
+    <title>Clinica Odontologica</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="title">
+            <h1> Clinica Dental Withe </h1>
+        </div>
+
+        <nav id="header">
+            <ul class="nav">
+
+                <li><a href="">Odontologos</a>
+                    <ul>
+                        <li><a href="./registrar-odontologo.html">Registar Odontologos</a></li>
+                        <li><a href="./listar-odontologo.html">Mostar Odontologos</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="">Pacientes</a>
+                    <ul>
+                        <li><a href="./registar-paciente.html">Registrar Pacientes</a></li>
+                        <li><a href="">Mostar Pacientes</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="">Turnos</a>
+                    <ul>
+                        <li><a href="./registrar-truno.html">Sacar Turno</a></li>
+                        <li><a href="./listar-turno.html">Mostar Turnos</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="">Cerrar Sesión </a></li>
+
+                <li><a href="../index.html">Home </a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="listado">
+
+            <h2>Listado de Pacientes</h2>
+            <br>
+            <table class="table" id="tablaPacientes">
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">DNI</th>
+                        <th scope="col">Fecha Ingreso</th>
+                        <th scope="col">Domicilio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div id="actualizarPaciente" class="display-none">
+
+            <h2>Actualizar datos del Paciente</h2>
+            <br>
+            <form action="" method="POST" name="paciente" id="formularioPaciente">
+
+                <fieldset name="datos">
+                    <legend>Datos personales</legend>
+                    <div class="mb-3">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="form-control"
+                            aria-describedby="emailHelp">
+                        <br>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required
+                            class="form-control" aria-describedby="emailHelp">
+                        <br>
+                        <input type="text" id="dni" name="dni" placeholder="DNI" required class="form-control"
+                            aria-describedby="emailHelp">
+
+                    </div>
+                </fieldset>
+
+                <fieldset name="direccion">
+                    <legend>Dirección</legend>
+                    <div class="mb-3">
+                        <input type="text" id="calle" name="calle" placeholder="Calle" required class="form-control"
+                            aria-describedby="emailHelp">
+                        <br>
+                        <input type="text" id="numero" name="numero" placeholder="Numero" required class="form-control"
+                            aria-describedby="emailHelp">
+                        <br>
+                        <input type="text" id="localidad" name="localidad" placeholder="Localidad" required
+                            class="form-control" aria-describedby="emailHelp">
+                        <br>
+                        <input type="text" id="provincia" name="provincia" placeholder="Provincia" required
+                            class="form-control" aria-describedby="emailHelp">
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary" value="Actualizar"
+                    id="actualizarPacienteBtn">Actualizar</button>
+                <button type="reset" class="btn btn-primary" value="Resetear" id="resetearPacienteBtn">Ir a la
+                    lista</button>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados a Roy Alejandro Martinez ©</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+INSERT INTO odontologos (nombre, apellido, matricula) VALUES ('Pepe', 'Florez', 159);
